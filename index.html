@@ -7,10 +7,26 @@
   <title>Document</title>
 </head>
 <body style="background-color:white;font-family:arial;">
-
-  <video width="320" height="240" controls style="padding-left:20px">
-    <source src="./polycam-video.mp4" type="video/mp4">
-  </video>
+  <style>
+    html { height: 100% }
+    body { height: 100% }
+    #map { height: 100%; width: 100%}
+  </style>
+  <script type="text/javascript" src="map.js"></script>
+  <div id="map"></div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmy9n811gkYviPHi50c7KnsFQb_Cc7Al4&callback=initMap">
+  //  APIKEY は  AIzaSyCmy9n811gkYviPHi50c7KnsFQb_Cc7Al4
+  </script>
+  
+  <!-- <script>
+    var MyLatLng = new google.maps.LatLng(35.6811673, 139.7670516);
+    var Options = {
+      zoom: 15,      //地図の縮尺値
+      center: MyLatLng,    //地図の中心座標
+      mapTypeId: 'roadmap'   //地図の種類
+    };
+    var map = new google.maps.Map(document.getElementById('map'), Options);
+  </script> -->
 
 </body>
 </html>
